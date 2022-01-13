@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="icon" href="/favicon_new.jpg.png">
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="login.html">
+
+    <style>
+        .error{
+            color: red;
+            margin: 0;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mainbox">
+        <section class="header">
+            <nav>
+                <a href="/homepage.html"><img src="/Logo_new.png"></a>
+            
+            <div class="nav-links">
+                <ul>
+                    <li><a href="">Cricket</a></li>
+                    <li><a href="">Football</a></li>
+                    <li><a href="">Hockey</a></li>
+                    <li><a href="">Tennis</a></li>
+                    <li><a href="/Signup/login.html">Sign Up</a></li>
+                </ul>
+            </div>
+        </nav>
+      </section>
+    <div class="c1">
+        <div class="c3">
+            <marquee id='scroll_news' style="font-family:Book Antiqua; color: #85C1E9">
+                <div onMouseOver="document.getElementById('scroll_news').stop();"
+                    onMouseOut="document.getElementById('scroll_news').start();">
+                    <h3>Register ! Paid Jackpot Teams Are Available.</h3>
+                </div>
+            </marquee>
+        </div>
+        <div class="c2">
+            <form action="" onsubmit="return validateForm()">
+                <h1>Register</h1>
+                <input id="username" type="text" name="" placeholder="username">
+                <p class="error" id="userError"></p>
+                <input type="Mobile no." name="" id="phone" placeholder="Mobile no." pattern="[1-9]{1}[0-9]{9}">
+                <p class="error" id="userError"></p>
+                <input type="email" name="" id="email" placeholder="Email" pattern="^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$">
+                <p class="error" id="userError"></p>
+                <input type="Password" id="password" name="" placeholder="Password">
+                <p class="error" id="userError"></p>
+                <input type="Password" id="cpassword" name="" placeholder="Confirm Password">
+                <p class="error" id="userError"></p>
+                <button type="Submit">Sign Up</button> <br>
+                <button> <a href="login.html">Login</a></button>
+            </form>
+        </div>
+    </div>
+    </div>
+
+    <script>
+        let username = document.getElementById("username");
+        let password = document.getElementByI("password");
+        let mobile = document.getElementById("phone");
+        let email = document.getElementByI("email");
+        let cpassword = document.getElementById("cpassword");
+
+
+        function validateForn(){
+           
+            if(username.value == "")
+            {
+                document.getElementById("userError").innerHTML = "Username is empty";
+            }
+        }
+
+    </script>
+</body>
+
+</html>
